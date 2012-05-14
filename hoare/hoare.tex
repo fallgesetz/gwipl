@@ -1,0 +1,37 @@
+\documentclass[11pt]{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\begin{document}
+
+Hoare starts out by deriving some simple sentences from axioms of the
+integers. Then, he points out that rigorizing a program is a bit
+harder, and gives a toy example to show it is possible.
+
+\section{Arguments for why it is important to formally prove a program correct}
+
+\begin{itemize}
+\item (Reliability) Logical correctness is the strongest form of testing.
+\item (Documentation) A proof is completely rigorous documentation that may explain
+  not only how a program works, but why it works.
+\item (Compatibility) Formal proofs may facilitate refactoring and dealing with
+  platform dependencies. Imagine if you have an axiomatic derivation
+  of a program. You can quickly determine whether this program will
+  work on a different computing platform by seeing whether it uses
+  axioms specific to that platform.
+\end{itemize}
+
+Furthermore, axiomatizing a programming language can aid in the design
+of new languages.
+
+\begin{itemize}
+\item Languages designed with a form proof system in mind can leave
+  nitty gritty details undefined, which ought not belong in a language
+  specification anyway..
+\item Languages designed from an axiomatic basis will be more
+  clearheaded because proofs provide a clear organizing principal.
+\end{itemize}
+
+
+
+\end{document}
